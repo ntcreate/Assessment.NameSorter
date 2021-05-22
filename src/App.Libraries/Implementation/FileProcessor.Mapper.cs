@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 namespace App.Libraries.Implementation
 {
-    // Partial: Houses Helper Functions (Mapper)
-    partial class NameSorter
+    // Partial: Helper Functions (Model Mapping).
+    partial class FileProcessor
     {
-        // Helper: Maps content list to model list
+        // Helper: Maps content list to model list.
         private List<NameModel> MapToNameList(List<string> contentList)
         {
             // Prep output
@@ -17,15 +17,15 @@ namespace App.Libraries.Implementation
             // For each content
             foreach (string content in contentList)
             {
-                // Map to model
-                nameList.Add(MapToModel(content));
+                // Maps to model
+                nameList.Add(MapToNameModel(content));
             }
 
             return nameList;
         }
 
-        // Helper: Maps content to model
-        private NameModel MapToModel(string content)
+        // Helper: Maps content to model.
+        private NameModel MapToNameModel(string content)
         {
             int seperatorIndex = 0;
 
@@ -64,7 +64,7 @@ namespace App.Libraries.Implementation
             };
         }
 
-        // Helper: Gets index of string after N-th amount of whitespace occurrence
+        // Helper: Gets index of string after N-th amount of whitespace occurrence.
         private int GetIndexByOccurrence(string content, int n)
         {
             int occurCounter = 0;
@@ -87,7 +87,7 @@ namespace App.Libraries.Implementation
                 }
             }
 
-            // Exception: Not expected to reach here, assuming use-case is (n=3)
+            // Exception: Not expected to reach here, assuming use-case is (n=3).
             throw new OccurIndexOutOfRangeException($"Unable to get index with occurrence ({n}) in word ({content}).");
         }
     }

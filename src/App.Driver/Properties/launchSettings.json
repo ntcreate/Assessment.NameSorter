@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "App.Driver": {
+    "App.Console": {
       "commandName": "Project",
-      "commandLineArgs": "\"C:\\TestCase\""
+      "commandLineArgs": "C:\\\\TestCase\\"
     }
   }
 }

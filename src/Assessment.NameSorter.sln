@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Driver", "App.Driver\App.Driver.csproj", "{E0A2A01E-1565-43B7-8186-DF97D54A9C9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Console", "App.Driver\App.Console.csproj", "{E0A2A01E-1565-43B7-8186-DF97D54A9C9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Libraries", "App.Libraries\App.Libraries.csproj", "{CEDE17E9-AFFE-4C45-B1C1-19499FD7A520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.Libraries", "App.Libraries\App.Libraries.csproj", "{CEDE17E9-AFFE-4C45-B1C1-19499FD7A520}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
