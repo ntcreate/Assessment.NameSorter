@@ -9,19 +9,14 @@ namespace App.Libraries.Implementation
     partial class FileProcessor
     {
         // Helper: Maps content list to model list.
-        private List<NameModel> MapToNameList(List<string> contentList)
+        private IEnumerable<NameModel> MapToNameList(List<string> contentList)
         {
-            // Prep output
-            List<NameModel> nameList = new List<NameModel>();
-
             // For each content
             foreach (string content in contentList)
             {
-                // Maps to model
-                nameList.Add(MapToNameModel(content));
+                // Maps to model & return value
+                yield return MapToNameModel(content);
             }
-
-            return nameList;
         }
 
         // Helper: Maps content to model.

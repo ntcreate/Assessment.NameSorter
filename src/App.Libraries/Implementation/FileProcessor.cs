@@ -26,7 +26,7 @@ namespace App.Libraries.Implementation
         public IEnumerable<NameModel> ReadFile(string fileName)
         {
             // Prep output
-            List<NameModel> nameList = new List<NameModel>();
+            IEnumerable<NameModel> nameList = new List<NameModel>();
 
             // With Exception Handling
             ExceptionUtils.WithExceptionHandling(() =>
@@ -76,7 +76,7 @@ namespace App.Libraries.Implementation
                 // Build destination path (Directory path verified to exist during input)
                 string destPath = Path.Combine(this._directory, fileName);
 
-                // Open StreamWriter
+                // Writes file content with StreamWriter
                 using (StreamWriter writer = new StreamWriter(destPath))
                 {
                     // For each NameModel

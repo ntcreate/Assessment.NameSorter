@@ -10,8 +10,8 @@ This repo houses the NameSorter Console Application built using .NET Core 3.1 as
 - Console App solution (***App.Console***) is built with netcoreapp3.1 as TargetFramework. This requires the installation of .NET Core Runtime 3.1, or otherwise please change to supported TargetFramework for your host.
 - Referencing Library solution (***App.Libraries***) is built with netstandard2.1 as TargetFramework. 
 - The default Console App takes in 1 Argument in Main Function, which is the directory which "unsorted-names-list.txt" resides.
-- The default 1st Argument is set as "C://TestCases/". Please have the file "unsorted-files-list.txt" in the current directory. Otherwise, you may change the directory as deemed appropriate.
-- In the scenario where your test case fails, kindly reference ***repo/sample/*** to run the basic test case.
+- The default 1st Argument is set as "***C://TestCase/***". Please have the file "unsorted-files-list.txt" in the current directory. Otherwise, you may change the directory as deemed appropriate.
+- In the scenario where your test case fails, kindly reference "***repo/sample/***" to run the basic test case.
 
 ## Usage
 To use Assessment.NameSorter, import the dependent libraries.

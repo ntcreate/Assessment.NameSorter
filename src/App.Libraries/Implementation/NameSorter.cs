@@ -8,7 +8,7 @@ namespace App.Libraries.Implementation
     /// <summary>
     /// Implementation of function signatures for NameSorter.
     /// </summary>
-    public partial class NameSorter : INameSorter
+    public class NameSorter : INameSorter
     {
         // Fn: Sorts the list via LastName, then FirstName, in ascending order.
         public IEnumerable<NameModel> Sort(IEnumerable<NameModel> nameList)
